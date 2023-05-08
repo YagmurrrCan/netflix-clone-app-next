@@ -18,7 +18,7 @@ function HomePageContainer({
       />
 
       {/* Kategori isimleri */}
-      <Categories categories={categories.slice(1, 10)} />
+      <Categories categories={categories.slice(1, 16)} />
 
       {/* Belirli bir category seçimi */}
       {!!selectedCategory.movies.length && (

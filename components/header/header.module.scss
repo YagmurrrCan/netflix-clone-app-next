@@ -19,13 +19,12 @@
   color: #fafafa;
 }
 
-
 .navigationMenu {
   display: flex;
   align-items: center;
 
   & > * {
-    margin-left: 2rem;
+    margin-left: 4rem;
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
@@ -41,7 +40,6 @@
     }
   }
 
-  
   .dropdownContent {
     display: none;
     position: absolute;
