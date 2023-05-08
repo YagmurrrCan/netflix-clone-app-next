@@ -7,7 +7,7 @@ import { Inter } from '@next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 
- const interFont = Inter({ subsets: ['latin'] })
+const interFont = Inter({ subsets: ['latin'] })
 
 const metadata = {
   title: 'Netflix Clone App',
