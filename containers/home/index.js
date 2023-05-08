@@ -12,24 +12,30 @@ function HomePageContainer({
 }) {
   return (
     <div>
+      {/* Random getirilecek bir popularMovie */}
       <FeaturedMovie
         movie={popularMovies[Math.floor(Math.random() * popularMovies.length)]}
       />
 
-      <Categories categories={categories.slice(1, 9)} />
+      {/* Kategori isimleri */}
+      <Categories categories={categories.slice(1, 10)} />
 
+      {/* Belirli bir category seçimi */}
       {!!selectedCategory.movies.length && (
-        <MoviesCard
+        <MoviesCard 
           title={categories.find(({ id }) => id === +selectedCategory.id)?.name}
-          movies={selectedCategory.movies.slice(1, 7)}
+          movies={selectedCategory.movies.slice(1, 19)}
         />
       )}
-      <MoviesCard title="Popular Films" movies={popularMovies.slice(1, 9)} />
 
-      <MoviesCard
-        title="Your favorites"
-        movies={topRatedMovies.slice(1, 13)}
-      />
+      {/* Seçilen kategori var mı varsa sadece o yoksa popular ve top-rated  */}
+      {selectedCategory.movies.length === 0 && (
+              <MoviesCard title="Popular Films" movies={popularMovies.slice(1, 13)} />
+            )}
+
+      {selectedCategory.movies.length === 0 && (
+        <MoviesCard title="Top Rated Films" movies={topRatedMovies.slice(1, 13)} />
+      )}
     </div>
   );
 }

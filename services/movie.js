@@ -1,4 +1,3 @@
-
 // [...category]>page.js içinden gelir
 const API_URL = 'https://api.themoviedb.org/3';
 
@@ -64,3 +63,12 @@ export {fetchMovieAPI,
     getPopularMovies,
     getMovie
 }
+
+export const getServerSideProps = async () => {
+  const { results } = await getTopRatedMovies();
+  return {
+    props: {
+      movies: results,
+    },
+  };
+};

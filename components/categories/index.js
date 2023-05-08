@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
+// import Carousel from 'react-multi-carousel';
+// import 'react-multi-carousel/lib/styles.css';
+
 import styles from "./categories.module.scss";
 
 function Categories({ categories }) {

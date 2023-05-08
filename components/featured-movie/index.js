@@ -23,7 +23,8 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
           Play
         </Link>
         <button className={styles.addButton}>
-          <FaPlus />
+          <FaPlus /> 
+          More Info
         </button>
       </div>
       <div className={styles.moviePoster}>
