@@ -6,4 +6,24 @@
   
   .footer a {
     text-decoration: underline;
+    margin-left: 10px;
   }
+
+  .footer p {
+    display: flex;
+    align-items: center;
+  }
+  
+    
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .terms {
+    margin-left: 20px;
+  }
+  
+  .contact {
+    margin-left: 20px;
+  }
+  

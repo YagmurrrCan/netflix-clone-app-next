@@ -14,10 +14,10 @@ const Header = () => {
         </Link>
         <nav className={styles.navigationMenu}>
           <Link href="#">HOME</Link>
-          <Link href="#">MOVIES</Link>
-          <Link href="#">SERIES</Link>
-          <Link href="#">KIDS</Link>
-          <Link href="#">MY LIST</Link>
+          <Link href="movies">MOVIES</Link>
+          <Link href="series">SERIES</Link>
+          <Link href="kids">KIDS</Link>
+          <Link href="my-list">MY LIST</Link>
         </nav>
       </div>
     </header>

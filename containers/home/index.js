@@ -15,7 +15,9 @@ function HomePageContainer({
       <FeaturedMovie
         movie={popularMovies[Math.floor(Math.random() * popularMovies.length)]}
       />
-      <Categories categories={categories.slice(1, 7)} />
+
+      <Categories categories={categories.slice(1, 9)} />
+
       {!!selectedCategory.movies.length && (
         <MoviesCard
           title={categories.find(({ id }) => id === +selectedCategory.id)?.name}
@@ -23,6 +25,7 @@ function HomePageContainer({
         />
       )}
       <MoviesCard title="Popular Films" movies={popularMovies.slice(1, 9)} />
+
       <MoviesCard
         title="Your favorites"
         movies={topRatedMovies.slice(1, 13)}
